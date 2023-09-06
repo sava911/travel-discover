@@ -21,7 +21,13 @@
   &__form {}
 
   &__picture {
-    &_img {}
+    position: relative;
+
+    &_hint {
+      position: absolute;
+      top: 90px;
+      left: 40px;
+    }
   }
 }
 
