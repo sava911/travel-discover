@@ -1,42 +1,32 @@
 html {
-  scroll-behavior: smooth;
+    scroll-behavior: smooth;
 }
 
 body {
-  background-color: var(--page-bg);
-  color: var(--text-color);
-  font-family: var(--font-main);
+    background-color: var(--page-bg);
+    color: var(--text-color);
+    font-family: var(--font-main);
 
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-smoothing: grayscale;
 }
 
 img {
-  display: block;
+    display: block;
 }
 
 .title-1 {
-  color: var(--text-color);
-  font-size: 72px;
-  font-weight: 700;
+    color: var(--text-color);
+    font-size: 72px;
+    font-weight: 700;
+
 }
 
-.text {
-  color: var(--text-muted);
+.title-1_decor {
+    position: relative;z-index: 0;
+}
 
-  font-size: 18px;
-  font-weight: 450;
-  line-height: 150%;
-
-  p+p {
-    margin-top: 1em;
-  }
-
-  &_decor {
-    position: relative;
-  }
-
-  &_decor::after {
+.title-1_decor::after {
 
     content: '';
     position: absolute;
@@ -45,7 +35,20 @@ img {
     width: 268px;
     height: 24px;
     z-index: -1;
+    background-image: url('./../img/discover/underline.svg');
     background-repeat: no-repeat;
-    background-image: url('./../../img/discover/underline.svg');
-  }
+}
+
+.text {
+    color: var(--text-muted);
+
+    font-size: 18px;
+    font-weight: 450;
+    line-height: 150%;
+
+    p+p {
+        margin-top: 1em;
+    }
+
+
 }

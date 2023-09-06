@@ -1,21 +1,46 @@
 .form {
-  display: grid;
-  grid-template-columns: 1fr auto 1fr auto;
-  padding: 12px 16px;
-  align-items: center;
-  gap: 16px;
+    display: grid;
+    grid-template-columns: 1fr auto 1fr auto;
+    padding: 12px 16px;
+    align-items: center;
+    gap: 16px;
 
-  border-radius: 16px;
-  border: 1px solid rgba(144, 144, 144, 0.30);
-  background: #FFF;
+    border-radius: 16px;
+    border: 1px solid rgba(144, 144, 144, 0.30);
+    background: #FFF;
 
-  &__del {
-    height: 24px;
-    width: 1px;
-    background: #909090;
-  }
+    &__del {
+        height: 24px;
+        width: 1px;
+        background: #909090;
+    }
 
-  &__label {}
+    &__label {
+        padding-left: 36px;
+        display: grid;
+        grid-template: 8px;
 
-  &__btn {}
+        background-image: url('./../../img/icons/map.svg');
+        background-position: 0 0;
+        background-size: auto;
+        background-repeat: no-repeat;
+
+        span{
+
+            font-size: 16px;
+            font-weight: 500;
+        }
+    }
+
+    &__input {
+        font-size: 14px;
+        font-weight: 450;
+
+        &::placeholder{
+        color: var(--text-muted);
+
+        }
+    }
+
+    &__btn {}
 }

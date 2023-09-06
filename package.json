@@ -35,5 +35,8 @@
 	},
 	"browserslist": [
 		"last 5 versions"
-	]
+	],
+	"dependencies": {
+		"autocomplete.js": "^0.38.1"
+	}
 }
